@@ -1,189 +1,58 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baila & Burn | Latin Dance Fitness Lucan</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        .hero-bg {
-            background-image: url('hero.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .instructora-card {
-            border: 8px solid #e11d8f;
-            box-shadow: 0 20px 40px rgba(225, 29, 143, 0.3);
-        }
-        video {
-            width: 100%;
-            max-height: 580px;
-            object-fit: contain;
-        }
-    </style>
-</head>
-<body class="bg-zinc-950 text-white">
-
-    <!-- NAV -->
-    <nav class="bg-black/95 backdrop-blur-md border-b border-white/10 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-5 py-4">
-            <div class="flex justify-between items-center">
-                <div class="text-2xl md:text-3xl font-black tracking-tighter text-pink-500">BAILA & BURN</div>
-                
-                <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSetuN3lbDWrehA_WW3HBcImVHYNB4te32IDbiRUCdR7G3MBFA/viewform', '_blank')" 
-                        class="bg-white text-black font-bold px-6 py-3.5 rounded-full text-base hover:bg-pink-500 hover:text-white transition shadow-lg">
-                    RESERVE YOUR SPOT
-                </button>
-            </div>
-        </div>
-    </nav>
-
-    <!-- HERO -->
-    <section class="hero-bg min-h-screen flex items-center relative">
-        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
-        
-        <div class="absolute bottom-20 md:bottom-28 left-1/2 -translate-x-1/2 text-center px-6 w-full">
-            <p class="text-pink-400 uppercase tracking-[3px] text-xs md:text-sm mb-3">LUCAN • EVERY THURSDAY 7:30PM</p>
-            <h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-none text-white mb-4">BAILA & BURN</h1>
-            <p class="text-lg md:text-2xl text-white/90 max-w-xl mx-auto px-4">
-                Latin Dance Fitness that makes you move, sweat and smile
-            </p>
-        </div>
-    </section>
-
-    <!-- ABOUT US -->
-    <section id="about" class="py-16 md:py-20 bg-zinc-900">
-        <div class="max-w-4xl mx-auto px-5">
-            <h2 class="text-4xl font-bold text-center mb-10">About Us</h2>
-            <div class="text-gray-300 text-[17px] leading-relaxed space-y-6">
-                <p>
-                    Baila & Burn is a high-energy Latin dance fitness class that blends the rhythms of salsa, reggaeton, 
-                    cumbia, and merengue with a full-body workout. Whether you're a seasoned dancer or have two left feet — 
-                    this class is for you.
-                </p>
-                <p>
-                    Our mission is simple: make fitness fun. Every Thursday evening, we transform Esker ETNS into a dance floor 
-                    where you can sweat, smile, and let loose.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- INSTRUCTORA -->
-    <section id="instructora" class="py-16 bg-black">
-        <div class="max-w-4xl mx-auto px-5 text-center">
-            <p class="text-pink-400 uppercase tracking-widest text-sm mb-4">Meet Your Instructor</p>
-            <img src="instructora.jpeg" alt="Baila & Burn Instructor" 
-                 class="instructora-card mx-auto rounded-3xl w-full max-w-sm mb-8">
-            <h2 class="text-4xl font-bold mb-5">Dance with energy and joy</h2>
-            <div class="max-w-2xl mx-auto text-gray-300 text-[17px] leading-relaxed">
-                <p>
-                    Our instructor began her dance journey in 2009 at the prestigious OG Academy in Venezuela. 
-                    Since then, dance has been her greatest passion. She created <strong>Baila & Burn</strong> to share her love 
-                    for Latin rhythms in a fun and energetic environment.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- COMMUNITY -->
-    <section class="py-16 bg-zinc-900">
-        <div class="max-w-7xl mx-auto px-5">
-            <h2 class="text-4xl font-bold text-center mb-10">Join the Baila & Burn family</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                <img src="foto1.jpg" alt="Community" class="community-img rounded-3xl shadow-xl w-full h-auto aspect-square object-cover">
-                <img src="foto2.jpg" alt="Community" class="community-img rounded-3xl shadow-xl w-full h-auto aspect-square object-cover">
-                <img src="foto3.jpg" alt="Community" class="community-img rounded-3xl shadow-xl w-full h-auto aspect-square object-cover">
-                <img src="foto4.jpg" alt="Community" class="community-img rounded-3xl shadow-xl w-full h-auto aspect-square object-cover">
-            </div>
-        </div>
-    </section>
-
-     <!-- VIDEO -->
-    <section id="video" class="py-20 bg-black">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-10">Feel the Energy</h2>
-            <div class="bg-zinc-950 rounded-3xl overflow-hidden border border-zinc-800">
-                <video controls class="w-full" poster="instructora.jpeg">
-                    <source src="class.mp4" type="video/mp4">
-                    Tu navegador no soporta el vídeo.
-                </video>
-            </div>
-        </div>
-    </section>
-
-    <!-- SCHEDULE -->
-    <section id="classes" class="py-16 bg-zinc-900">
-        <div class="max-w-6xl mx-auto px-5 text-center">
-            <h2 class="text-4xl font-bold mb-8">Class Schedule</h2>
-            <div class="inline-block bg-black px-10 py-10 rounded-3xl">
-                <p class="text-2xl md:text-3xl">Every Thursday</p>
-                <p class="text-6xl font-black text-pink-500 mt-3">7:30 PM</p>
-                <p class="text-lg mt-6">Esker ETNS • Lucan</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRICES -->
-    <section id="prices" class="py-16 bg-zinc-950">
-        <div class="max-w-4xl mx-auto px-5 text-center">
-            <h2 class="text-4xl font-bold mb-6">Choose Your Option</h2>
-            <p class="text-pink-400 mb-10">Pay easily with Revolut</p>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-xl mx-auto">
-                <div class="bg-zinc-900 border border-pink-600 rounded-3xl p-8">
-                    <p class="text-pink-400 uppercase tracking-widest text-sm">Single Class</p>
-                    <p class="text-6xl font-black my-6">€12</p>
-                    <a href="https://revolut.me/licelppof" target="_blank" 
-                       class="block bg-pink-600 hover:bg-pink-500 py-5 rounded-2xl font-bold text-lg">Pay €12</a>
-                </div>
-
-                <div class="bg-zinc-900 border-2 border-yellow-400 rounded-3xl p-8 relative">
-                    <div class="absolute -top-4 right-6 bg-yellow-400 text-black text-xs font-bold px-5 py-1 rounded-full">BEST VALUE</div>
-                    <p class="text-pink-400 uppercase tracking-widest text-sm">Pack of 6 Classes</p>
-                    <p class="text-6xl font-black my-6">€60</p>
-                    <a href="https://revolut.me/licelppof" target="_blank" 
-                       class="block bg-pink-600 hover:bg-pink-500 py-5 rounded-2xl font-bold text-lg">Pay €60</a>
-                </div>
-            </div>
-
-            <div class="mt-14">
-                <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSetuN3lbDWrehA_WW3HBcImVHYNB4te32IDbiRUCdR7G3MBFA/viewform', '_blank')" 
-                        class="w-full md:w-auto bg-white text-black font-bold px-10 py-6 rounded-full text-xl hover:bg-pink-500 hover:text-white transition shadow-2xl">
-                    RESERVE YOUR SPOT
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="py-16 bg-black">
-        <div class="max-w-6xl mx-auto px-5 text-center">
-            <h2 class="text-4xl font-bold mb-10">Get in Touch</h2>
-            <div class="max-w-md mx-auto space-y-10">
-                <div>
-                    <p class="text-pink-400 mb-2">📍 LOCATION</p>
-                    <a href="https://maps.google.com/?q=Esker+Ln,+Glebe,+Lucan,+Co.+Dublin" target="_blank" class="text-xl hover:text-pink-400">
-                        Esker ETNS<br>Esker Ln, Glebe, Lucan, Co. Dublin
-                    </a>
-                </div>
-                <div>
-                    <p class="text-pink-400 mb-2">📱 WHATSAPP</p>
-                    <a href="https://wa.me/353876071392" class="text-3xl font-semibold hover:text-pink-400">
-                        087 607 1392
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-zinc-950 py-12 text-center text-white/60 text-sm">
-        <p>Baila & Burn • Latin Dance Fitness Lucan</p>
-        <p>Every Thursday at 7:30 PM</p>
-        <p class="mt-8">© 2026 Baila & Burn</p>
-    </footer>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Claude Design</title>
+    <link rel="icon" type="image/png" href="/design/favicon.png" />
+    <script>
+      // FOUC guard: set data-theme before any stylesheet loads so the first
+      // paint uses the right palette. Mirrors hooks/useTheme.ts. The stored
+      // value is JSON (usehooks-ts useLocalStorage). When no preference is
+      // stored we paint light — the dark-mode flag isn't known until React
+      // mounts, and a flag-off user with OS dark mode shouldn't see a dark
+      // flash. useTheme's effect corrects this on mount for flag-on users.
+      try {
+        var raw = localStorage.getItem('om:theme');
+        // Mirror useTheme's default: usehooks-ts doesn't persist 'system'
+        // until the toggle is used, so absent = 'system' (gated on flagOn).
+        var pref = raw ? JSON.parse(raw) : 'system';
+        // The flag isn't known at first paint. The hook persists its last
+        // known state here so a user whose flag was turned off after picking
+        // Dark doesn't see a dark→light flash on every load.
+        var flagOn = localStorage.getItem('om:dark-mode-enabled') === '1';
+        var dark =
+          flagOn &&
+          (pref === 'dark' ||
+            (pref === 'system' &&
+              matchMedia('(prefers-color-scheme: dark)').matches));
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+        // Pre-CSS canvas color: until tokens.css loads, the UA paints the
+        // default white canvas, which flashes on a dark hard-reload. Inline
+        // values mirror tokens.css --om-bg-app; useTheme clears this once
+        // the app mounts so the stylesheet owns the background again.
+        document.documentElement.style.background = dark
+          ? '#1c1b19'
+          : '#faf9f5';
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light';
+        document.documentElement.style.background = '#faf9f5';
+      }
+    </script>
+    <script type="module" crossorigin src="/design/assets/v1/index-iPm31apk.js"></script>
+    <link rel="modulepreload" crossorigin href="/design/assets/v1/rolldown-runtime-CMxvf4Kt.js">
+    <link rel="modulepreload" crossorigin href="/design/assets/v1/preload-helper-7XptfjGJ.js">
+    <link rel="modulepreload" crossorigin href="/design/assets/v1/react-BthIFXYf.js">
+    <link rel="modulepreload" crossorigin href="/design/assets/v1/client-lite-THLurY2W.js">
+    <link rel="modulepreload" crossorigin href="/design/assets/v1/connect-lite-vzd2EiZc.js">
+    <link rel="modulepreload" crossorigin href="/design/assets/v1/useOrg-LZFeDgnh.js">
+    <link rel="modulepreload" crossorigin href="/design/assets/v1/cn-BvRk9kiK.js">
+    <link rel="modulepreload" crossorigin href="/design/assets/v1/cn-qYiRd2Uw.js">
+    <link rel="modulepreload" crossorigin href="/design/assets/v1/jsx-runtime-DDrWIXeu.js">
+    <link rel="stylesheet" crossorigin href="/design/assets/v1/index-D3YK2LgV.css">
+  <link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/AttachmentChips-SogZclw8.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/Button-m-6Fu_iZ.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/Dialog-DDg-DLz1.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/LimitUpsellOptionCard-C0aDwfBn.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/ProjectPage-BtU6UjAn.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/Spinner-DfbnZwNp.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/SpinnerCursorContext-FnwGR7gg.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/browser-BV-Pd9QF.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/capture-mutex-C_-Q9CPb.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/client-D2QMo6h9.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/client-event-bus-CUOhmLFi.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/color-CNsbzl9V.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/connectrpc-314IgR-d.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/ds-self-check-DbrwMIR4.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/emit-DIh5PVJF.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/esm--BT9Kmg4.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/fonts-CER0kAxd.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/glyph-BHo4ckbs.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/home-analytics-BSMgUkc4.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/host-BwlQdwMG.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/icon-glyphs-B88ks9BF.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/path-B8831-h-.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/platform-D5xw-iTC.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/presenterChannel-CJwPOshM.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/shared-BtICgni1.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/spark-CWRdL_eg.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/timestamp-BohYTGqR.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/useEditInteraction-Bn8lstsK.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/useModelSelection-BEkjxWB9.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/useMutation-DmOXKGoo.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/useQuery-C7M6zLOm.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/useUserSettings-DYQyf-qR.js"><link rel="modulepreload" crossorigin fetchpriority="low" href="/design/assets/v1/viewer-handle-ZeeDePIC.js"><link rel="preload" as="style" crossorigin fetchpriority="low" href="/design/assets/v1/ProjectPage-CSDuc-ds.css"><link rel="preload" as="style" crossorigin fetchpriority="low" href="/design/assets/v1/Spinner-C3hHoRdu.css"><link rel="preload" as="style" crossorigin fetchpriority="low" href="/design/assets/v1/emit-D66gdL5p.css"><link rel="preload" as="style" crossorigin fetchpriority="low" href="/design/assets/v1/home-analytics-Jip0Shg4.css"></head>
+  <body>
+    <script type="application/json" id="omelette-me">{"accountUuid":"5f9aa801-1205-4579-af96-34420a8f4ab2","organizationUuid":"2278ab3a-2de5-4b14-9f5d-a7ce31db1077","email":"javierignacioayala@gmail.com","displayName":"Javier","orgName":"javierignacioayala@gmail.com's Organization","growthbookPayload":"{\"features\":{\"1151484512\":{\"defaultValue\":false},\"1165366735\":{\"defaultValue\":false},\"1196304285\":{\"defaultValue\":false},\"1227884110\":{\"defaultValue\":\"promptbox\",\"rules\":[{\"force\":\"promptbox\",\"tracks\":[{\"experiment\":{\"hashAttribute\":\"id\",\"key\":\"promptbox-vs-make\",\"variations\":[\"make\",\"promptbox\"]},\"result\":{\"featureId\":\"1227884110\",\"hashAttribute\":\"id\",\"hashUsed\":true,\"hashValue\":\"5f9aa801-1205-4579-af96-34420a8f4ab2\",\"inExperiment\":true,\"key\":\"1\",\"value\":\"promptbox\",\"variationId\":1}}]}]},\"1401580970\":{\"defaultValue\":\"attach_pills\",\"rules\":[{\"force\":\"attach_pills\",\"tracks\":[{\"experiment\":{\"hashAttribute\":\"id\",\"key\":\"omelette_attach_suggestion_variant\",\"variations\":[\"control\",\"attach_pills\"]},\"result\":{\"featureId\":\"1401580970\",\"hashAttribute\":\"id\",\"hashUsed\":true,\"hashValue\":\"5f9aa801-1205-4579-af96-34420a8f4ab2\",\"inExperiment\":true,\"key\":\"1\",\"value\":\"attach_pills\",\"variationId\":1}}]}]},\"1416961418\":{\"defaultValue\":false},\"1439489127\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mqqtdxj2\"}]},\"1512845023\":{\"defaultValue\":{}},\"1515141647\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mqgslqr3\"}]},\"1561180886\":{\"defaultValue\":false},\"1640367735\":{\"defaultValue\":\"full\"},\"1649941334\":{\"defaultValue\":false},\"167478287\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mqaouksv\"}]},\"1780946029\":{\"defaultValue\":true},\"1819818117\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fbe61835-fcc4-4d16-9da4-78a591bd03dd\"}]},\"1823167981\":{\"defaultValue\":false},\"182608835\":{\"defaultValue\":{\"models\":[\"claude-opus-4-8\"]},\"rules\":[{\"force\":{\"models\":[\"claude-opus-4-8\"]},\"id\":\"fr_mqgrq45w\"}]},\"1886700156\":{\"defaultValue\":false},\"190587821\":{\"defaultValue\":true},\"196263551\":{\"defaultValue\":false},\"1964418062\":{\"defaultValue\":false},\"1992383354\":{\"defaultValue\":{}},\"1995367228\":{\"defaultValue\":false},\"2047721102\":{\"defaultValue\":true},\"2058095250\":{\"defaultValue\":true},\"2108531094\":{\"defaultValue\":true},\"2149436205\":{\"defaultValue\":true},\"2151263030\":{\"defaultValue\":false},\"2230761618\":{\"defaultValue\":false},\"2245129288\":{\"defaultValue\":\"Claude Code\"},\"2295492666\":{\"defaultValue\":false},\"2319326955\":{\"defaultValue\":{\"minProjectCount\":5,\"placements\":{\"chin\":true,\"postExport\":false,\"postShare\":false,\"settings\":true}},\"rules\":[{\"force\":{\"minProjectCount\":5,\"placements\":{\"chin\":true,\"postExport\":false,\"postShare\":false,\"settings\":true}},\"tracks\":[{\"experiment\":{\"hashAttribute\":\"id\",\"key\":\"cd_guest_pass_exp\",\"variations\":[{\"minProjectCount\":1,\"placements\":{\"chin\":false,\"postExport\":false,\"postShare\":false,\"settings\":false}},{\"minProjectCount\":1,\"placements\":{\"chin\":true,\"postExport\":false,\"postShare\":false,\"settings\":true}},{\"minProjectCount\":5,\"placements\":{\"chin\":true,\"postExport\":false,\"postShare\":false,\"settings\":true}},{\"minProjectCount\":15,\"placements\":{\"chin\":true,\"postExport\":false,\"postShare\":false,\"settings\":true}}]},\"result\":{\"featureId\":\"2319326955\",\"hashAttribute\":\"id\",\"hashUsed\":true,\"hashValue\":\"5f9aa801-1205-4579-af96-34420a8f4ab2\",\"inExperiment\":true,\"key\":\"2\",\"value\":{\"minProjectCount\":5,\"placements\":{\"chin\":true,\"postExport\":false,\"postShare\":false,\"settings\":true}},\"variationId\":2}}]}]},\"2334228495\":{\"defaultValue\":\"https://docs.google.com/forms/d/e/1FAIpQLSfKN7e_F4B8erZWBl3gjnVsNE1RRo5eiN_KhmXyiefUEZ71rQ/viewform\",\"rules\":[{\"force\":\"https://docs.google.com/forms/d/e/1FAIpQLSfKN7e_F4B8erZWBl3gjnVsNE1RRo5eiN_KhmXyiefUEZ71rQ/viewform\",\"id\":\"fr_mnwalz96\"}]},\"2350294185\":{\"defaultValue\":false},\"2352858198\":{\"defaultValue\":false},\"2365775426\":{\"defaultValue\":false},\"2384113377\":{\"defaultValue\":false},\"2412179225\":{\"defaultValue\":\"on_without_toggle\"},\"2420051580\":{\"defaultValue\":false},\"2469959517\":{\"defaultValue\":\"no_create\"},\"2492478609\":{\"defaultValue\":\"placeholder\",\"rules\":[{\"force\":\"placeholder\",\"tracks\":[{\"experiment\":{\"hashAttribute\":\"id\",\"key\":\"omelette_home_attach_variant\",\"variations\":[\"control\",\"placeholder\",\"plus_label\",\"starter_drop\"]},\"result\":{\"featureId\":\"2492478609\",\"hashAttribute\":\"id\",\"hashUsed\":true,\"hashValue\":\"5f9aa801-1205-4579-af96-34420a8f4ab2\",\"inExperiment\":true,\"key\":\"1\",\"value\":\"placeholder\",\"variationId\":1}}]}]},\"2698841507\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"5zN5zjtnBsBlbqzIZAb6Zc:100.00:2\"}]},\"2880160395\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mqihdr3o\"}]},\"289426011\":{\"defaultValue\":\"progress\"},\"2898290939\":{\"defaultValue\":false},\"292332472\":{\"defaultValue\":false},\"2932278662\":{\"defaultValue\":{}},\"2936519687\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mq9zz7mt\"}]},\"299168588\":{\"defaultValue\":false},\"3032265515\":{\"defaultValue\":true},\"3049740115\":{\"defaultValue\":false},\"3070778810\":{\"defaultValue\":{\"admin-capability-tooltip\":{\"enabled\":true,\"paths\":[\"/admin-settings/capabilities\"]},\"chat-tooltip\":{\"enabled\":true,\"paths\":[\"/new\"]},\"clint-interview\":{\"enabled\":true,\"paths\":[\"/new\",\"/task/new\"]},\"console-spotlight\":{\"enabled\":true,\"paths\":[\"/*\"]},\"corner-nudge\":{\"enabled\":true,\"paths\":[\"/*\"]},\"cowork\":{\"enabled\":true,\"paths\":[\"/task/new\"]},\"dashboard-banner\":{\"enabled\":true,\"paths\":[\"/dashboard\"]},\"dashboard-promo-banner\":{\"enabled\":true,\"paths\":[\"/dashboard\"]},\"design-chat-tooltip\":{\"enabled\":true,\"paths\":[\"/p/*\"]},\"design-guest-pass-home\":{\"enabled\":true,\"paths\":[\"/\"]},\"design-spotlight\":{\"enabled\":true,\"paths\":[\"/*\"]},\"global-banner\":{\"enabled\":true,\"paths\":[\"/new\",\"/chat/*\"]},\"home-banner\":{\"enabled\":true,\"paths\":[\"/new\"]},\"home-nudge\":{\"enabled\":true,\"paths\":[\"/new\"]},\"sidebar-callout\":{\"enabled\":true,\"paths\":[\"/*\"]},\"sidebar-product-badge\":{\"enabled\":true,\"paths\":[\"/*\"]},\"spotlight\":{\"enabled\":true,\"paths\":[\"/new\",\"/task/new\",\"/code\",\"/epitaxy\"]}}},\"3070976585\":{\"defaultValue\":false},\"3123903501\":{\"defaultValue\":false},\"3136180827\":{\"defaultValue\":\"builtin\"},\"323017277\":{\"defaultValue\":false},\"3259014779\":{\"defaultValue\":\"high\"},\"3275324994\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mqgs4fnv\"}]},\"3290303989\":{\"defaultValue\":\"Claude Design\"},\"3387678531\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mqfyn30u\"}]},\"3423339596\":{\"defaultValue\":false,\"rules\":[{\"force\":false,\"id\":\"fr_3smt4nmngjlnbj\"}]},\"3489167219\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mprhvxaa\"}]},\"3657086880\":{\"defaultValue\":false},\"3669825161\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mq5ocxpr\"}]},\"3706474895\":{\"defaultValue\":false},\"375802038\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mqtkj38a\"}]},\"3803514950\":{\"defaultValue\":false},\"3813248442\":{\"defaultValue\":false},\"3846130249\":{\"defaultValue\":true},\"3855458502\":{\"defaultValue\":false},\"3885738648\":{\"defaultValue\":false},\"3925648405\":{\"defaultValue\":false},\"3956844404\":{\"defaultValue\":false},\"4043533131\":{\"defaultValue\":false},\"4068229310\":{\"defaultValue\":\"OFF\"},\"4158685222\":{\"defaultValue\":false},\"4227212264\":{\"defaultValue\":false},\"4292285061\":{\"defaultValue\":false},\"505682162\":{\"defaultValue\":true},\"520603182\":{\"defaultValue\":\"takeover_chips\",\"rules\":[{\"force\":\"takeover_chips\",\"id\":\"fr_fspnmqfiwl2u\"}]},\"615499191\":{\"defaultValue\":false},\"617433922\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mqfckmfe\"}]},\"657312184\":{\"defaultValue\":false},\"664173016\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_1h4b0onmnaw2adf\"}]},\"683719888\":{\"defaultValue\":true,\"rules\":[{\"force\":true,\"id\":\"fr_mqifkas7\"}]},\"693066665\":{\"defaultValue\":false},\"715846303\":{\"defaultValue\":false},\"717940119\":{\"defaultValue\":false},\"728811919\":{\"defaultValue\":false},\"737652865\":{\"defaultValue\":false},\"983120038\":{\"defaultValue\":false}},\"hashing_algorithm\":\"djb2\"}","modelPresets":[{"id":"claude-fable-5","label":"Claude Fable 5","maxTokens":1000000,"supportsAdaptiveThinking":true,"description":"For your toughest challenges","effortOptions":[{"id":"low","name":"Low"},{"id":"medium","name":"Medium"},{"id":"high","name":"High","recommended":true},{"id":"max","name":"Max"}]},{"id":"claude-opus-4-8","label":"Claude Opus 4.8","maxTokens":1000000,"supportsAdaptiveThinking":true,"description":"For complex tasks","effortOptions":[{"id":"low","name":"Low"},{"id":"medium","name":"Medium"},{"id":"high","name":"High","recommended":true},{"id":"max","name":"Max"}]},{"id":"claude-sonnet-4-6","label":"Claude Sonnet 4.6","maxTokens":1000000,"supportsAdaptiveThinking":true,"description":"Most efficient for everyday tasks","effortOptions":[{"id":"low","name":"Low","recommended":true},{"id":"medium","name":"Medium"},{"id":"high","name":"High"},{"id":"max","name":"Max"}]},{"id":"claude-haiku-4-5-20251001","label":"Claude Haiku 4.5","maxTokens":200000,"description":"Fastest for quick answers"},{"id":"claude-opus-4-7","label":"Claude Opus 4.7","maxTokens":1000000,"supportsAdaptiveThinking":true,"overflow":true,"effortOptions":[{"id":"low","name":"Low"},{"id":"medium","name":"Medium"},{"id":"high","name":"High","recommended":true},{"id":"max","name":"Max"}]},{"id":"claude-opus-4-6","label":"Claude Opus 4.6","maxTokens":1000000,"supportsAdaptiveThinking":true,"overflow":true,"effortOptions":[{"id":"low","name":"Low"},{"id":"medium","name":"Medium","recommended":true},{"id":"high","name":"High"},{"id":"max","name":"Max"}]},{"id":"claude-3-opus-20240229","label":"Claude Opus 3","maxTokens":200000,"overflow":true}],"defaultModelId":"claude-haiku-4-5-20251001","isPersonalOrg":true,"accessLevel":"ACCESS_LEVEL_FULL","canManageDs":true,"memberships":[{"uuid":"2278ab3a-2de5-4b14-9f5d-a7ce31db1077","name":"javierignacioayala@gmail.com's Organization"}],"canManageBilling":true,"orgScopeSharingAllowed":true}</script><div id="root"></div>
+  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a13d7652fa65eeff',t:'MTc4MjgyNTU2Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
