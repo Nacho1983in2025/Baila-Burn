@@ -1,0 +1,9 @@
+{
+  "name": "baila-burn",
+  "version": "1.0.0",
+  "description": "Latin Dance Fitness Website",
+  "scripts": {
+    "build": "echo 'Building...'",
+    "start": "echo 'Ready'"
+  }
+}
