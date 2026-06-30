@@ -1,189 +1,150 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baila & Burn | Latin Dance Fitness Lucan</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        .hero-bg {
-            background-image: url('hero.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .instructora-card {
-            border: 8px solid #e11d8f;
-            box-shadow: 0 20px 40px rgba(225, 29, 143, 0.3);
-        }
-        video {
-            width: 100%;
-            max-height: 580px;
-            object-fit: contain;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baila & Burn | Latin Dance Fitness</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Outfit', sans-serif; background: #0a0a0a; color: #fff; line-height: 1.6; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    section { padding: 80px 20px; max-width: 1200px; margin: 0 auto; width: 100%; }
+    h1, h2, h3 { font-weight: 700; line-height: 1.1; }
+    h1 { font-size: clamp(36px, 8vw, 72px); }
+    h2 { font-size: clamp(32px, 6vw, 48px); }
+  </style>
 </head>
-<body class="bg-zinc-950 text-white">
+<body>
 
-    <!-- NAV -->
-    <nav class="bg-black/95 backdrop-blur-md border-b border-white/10 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-5 py-4">
-            <div class="flex justify-between items-center">
-                <div class="text-2xl md:text-3xl font-black tracking-tighter text-pink-500">BAILA & BURN</div>
-                
-                <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSetuN3lbDWrehA_WW3HBcImVHYNB4te32IDbiRUCdR7G3MBFA/viewform', '_blank')" 
-                        class="bg-white text-black font-bold px-6 py-3.5 rounded-full text-base hover:bg-pink-500 hover:text-white transition shadow-lg">
-                    RESERVE YOUR SPOT
-                </button>
-            </div>
-        </div>
-    </nav>
+<!-- HEADER -->
+<header style="padding: 24px 20px; display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; width: 100%;">
+  <div style="font-size: 24px; font-weight: 700;">
+    <span style="color: #ff006e;">BAILA</span> <span style="color: #00f5ff;">&</span> <span style="color: #ffbe0b;">BURN</span>
+  </div>
+  <nav style="display: flex; gap: 32px; font-size: 14px;">
+    <a href="#about">About</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#pricing">Pricing</a>
+  </nav>
+</header>
 
-    <!-- HERO -->
-    <section class="hero-bg min-h-screen flex items-center relative">
-        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
-        
-        <div class="absolute bottom-20 md:bottom-28 left-1/2 -translate-x-1/2 text-center px-6 w-full">
-            <p class="text-pink-400 uppercase tracking-[3px] text-xs md:text-sm mb-3">LUCAN • EVERY THURSDAY 7:30PM</p>
-            <h1 class="text-5xl md:text-7xl font-black tracking-tighter leading-none text-white mb-4">BAILA & BURN</h1>
-            <p class="text-lg md:text-2xl text-white/90 max-w-xl mx-auto px-4">
-                Latin Dance Fitness that makes you move, sweat and smile
-            </p>
-        </div>
-    </section>
+<!-- HERO -->
+<section style="padding: 60px 20px; text-align: center; background: linear-gradient(135deg, #0a0a0a 0%, #1a0020 50%, #0a0a0a 100%);">
+  <h1 style="background: linear-gradient(90deg, #ff006e, #00f5ff, #ffbe0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; margin-bottom: 16px;">Latin Dance Fitness</h1>
+  <p style="font-size: 18px; color: #ccc; margin-bottom: 40px;">Move, sweat, smile. Every Thursday at Esker ETNS, Lucan.</p>
+  <a href="https://wa.me/353876071392" style="padding: 16px 32px; background: #ff006e; color: white; font-weight: 600; border-radius: 8px; font-size: 16px; display: inline-block;">Reserve Your Spot</a>
+</section>
 
-    <!-- ABOUT US -->
-    <section id="about" class="py-16 md:py-20 bg-zinc-900">
-        <div class="max-w-4xl mx-auto px-5">
-            <h2 class="text-4xl font-bold text-center mb-10">About Us</h2>
-            <div class="text-gray-300 text-[17px] leading-relaxed space-y-6">
-                <p>
-                    Baila & Burn is a high-energy Latin dance fitness class that blends the rhythms of salsa, reggaeton, 
-                    cumbia, and merengue with a full-body workout. Whether you're a seasoned dancer or have two left feet — 
-                    this class is for you.
-                </p>
-                <p>
-                    Our mission is simple: make fitness fun. Every Thursday evening, we transform Esker ETNS into a dance floor 
-                    where you can sweat, smile, and let loose.
-                </p>
-            </div>
-        </div>
-    </section>
+<!-- QUICK INFO -->
+<section style="padding: 40px 20px; background: #111111; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+  <div style="padding: 24px; background: #1a1a1a; border-left: 4px solid #ff006e; border-radius: 4px;">
+    <p style="font-size: 12px; color: #00f5ff; font-weight: 600; text-transform: uppercase; margin-bottom: 8px;">📍 Location</p>
+    <p style="font-size: 16px; font-weight: 500;">Esker ETNS</p>
+    <p style="font-size: 14px; color: #aaa; margin-top: 4px;">Esker Ln, Glebe, Lucan, Co. Dublin</p>
+  </div>
+  <div style="padding: 24px; background: #1a1a1a; border-left: 4px solid #00f5ff; border-radius: 4px;">
+    <p style="font-size: 12px; color: #ffbe0b; font-weight: 600; text-transform: uppercase; margin-bottom: 8px;">⏰ Schedule</p>
+    <p style="font-size: 16px; font-weight: 500;">Every Thursday</p>
+    <p style="font-size: 14px; color: #aaa; margin-top: 4px;">7:30 PM</p>
+  </div>
+  <div style="padding: 24px; background: #1a1a1a; border-left: 4px solid #ffbe0b; border-radius: 4px;">
+    <p style="font-size: 12px; color: #ff006e; font-weight: 600; text-transform: uppercase; margin-bottom: 8px;">💬 WhatsApp</p>
+    <a href="https://wa.me/353876071392" style="font-size: 16px; font-weight: 500; color: #00f5ff;">087 607 1392</a>
+    <p style="font-size: 14px; color: #aaa; margin-top: 4px;">Direct contact</p>
+  </div>
+</section>
 
-    <!-- INSTRUCTORA -->
-    <section id="instructora" class="py-16 bg-black">
-        <div class="max-w-4xl mx-auto px-5 text-center">
-            <p class="text-pink-400 uppercase tracking-widest text-sm mb-4">Meet Your Instructor</p>
-            <img src="instructora.jpeg" alt="Baila & Burn Instructor" 
-                 class="instructora-card mx-auto rounded-3xl w-full max-w-sm mb-8">
-            <h2 class="text-4xl font-bold mb-5">Dance with energy and joy</h2>
-            <div class="max-w-2xl mx-auto text-gray-300 text-[17px] leading-relaxed">
-                <p>
-                    Our instructor began her dance journey in 2009 at the prestigious OG Academy in Venezuela. 
-                    Since then, dance has been her greatest passion. She created <strong>Baila & Burn</strong> to share her love 
-                    for Latin rhythms in a fun and energetic environment.
-                </p>
-            </div>
-        </div>
-    </section>
+<!-- ABOUT -->
+<section id="about" style="padding: 80px 20px; background: #0a0a0a; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+  <div>
+    <h2 style="margin-bottom: 24px;"><span style="color: #ff006e;">Dance</span> with Energy <span style="color: #00f5ff;">and Joy</span></h2>
+    <p style="font-size: 16px; color: #ccc; margin-bottom: 20px;">Our instructor began her dance journey in 2009 at the prestigious OG Academy in Venezuela.</p>
+    <p style="font-size: 16px; color: #ccc;">She created <strong>Baila & Burn</strong> to share her love for Latin rhythms in a fun and energetic environment.</p>
+  </div>
+  <div style="border-radius: 12px; overflow: hidden; aspect-ratio: 1; border: 4px solid #ff006e;">
+    <img src="https://baila-burn.vercel.app/instructora.jpeg" alt="Instructor" style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
+</section>
 
-    <!-- COMMUNITY -->
-    <section class="py-16 bg-zinc-900">
-        <div class="max-w-7xl mx-auto px-5">
-            <h2 class="text-4xl font-bold text-center mb-10">Join the Baila & Burn family</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-                <img src="foto1.jpg" alt="Community" class="community-img rounded-3xl shadow-xl w-full h-auto aspect-square object-cover">
-                <img src="foto2.jpg" alt="Community" class="community-img rounded-3xl shadow-xl w-full h-auto aspect-square object-cover">
-                <img src="foto3.jpg" alt="Community" class="community-img rounded-3xl shadow-xl w-full h-auto aspect-square object-cover">
-                <img src="foto4.jpg" alt="Community" class="community-img rounded-3xl shadow-xl w-full h-auto aspect-square object-cover">
-            </div>
-        </div>
-    </section>
+<!-- VIDEO -->
+<section id="video" style="padding: 80px 20px; background: #0a0a0a;">
+  <h2 style="margin-bottom: 48px; text-align: center;">Watch Our <span style="color: #00f5ff;">Class</span> in Action</h2>
+  <div style="border-radius: 12px; overflow: hidden; aspect-ratio: 16 / 9; border: 2px solid #ff006e;">
+    <video style="width: 100%; height: 100%; object-fit: cover;" controls>
+      <source src="https://baila-burn.vercel.app/class.mp4" type="video/mp4">
+      Tu navegador no soporta el vídeo.
+    </video>
+  </div>
+</section>
 
-     <!-- VIDEO -->
-    <section id="video" class="py-20 bg-black">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-10">Feel the Energy</h2>
-            <div class="bg-zinc-950 rounded-3xl overflow-hidden border border-zinc-800">
-                <video controls class="w-full" poster="instructora.jpeg">
-                    <source src="class.mp4" type="video/mp4">
-                    Tu navegador no soporta el vídeo.
-                </video>
-            </div>
-        </div>
-    </section>
+<!-- GALLERY -->
+<section id="gallery" style="padding: 80px 20px; background: #111111;">
+  <h2 style="margin-bottom: 12px; text-align: center;">Feel the <span style="color: #00f5ff;">Energy</span></h2>
+  <p style="text-align: center; color: #aaa; margin-bottom: 60px;">Join our community of dancers</p>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+    <div style="border-radius: 12px; overflow: hidden; aspect-ratio: 1; border: 2px solid #ff006e;">
+      <img src="https://baila-burn.vercel.app/foto1.jpg" alt="Community" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <div style="border-radius: 12px; overflow: hidden; aspect-ratio: 1; border: 2px solid #00f5ff;">
+      <img src="https://baila-burn.vercel.app/foto2.jpg" alt="Community" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <div style="border-radius: 12px; overflow: hidden; aspect-ratio: 1; border: 2px solid #ffbe0b;">
+      <img src="https://baila-burn.vercel.app/foto3.jpg" alt="Community" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <div style="border-radius: 12px; overflow: hidden; aspect-ratio: 1; border: 2px solid #ff006e;">
+      <img src="https://baila-burn.vercel.app/foto4.jpg" alt="Community" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+  </div>
+</section>
 
-    <!-- SCHEDULE -->
-    <section id="classes" class="py-16 bg-zinc-900">
-        <div class="max-w-6xl mx-auto px-5 text-center">
-            <h2 class="text-4xl font-bold mb-8">Class Schedule</h2>
-            <div class="inline-block bg-black px-10 py-10 rounded-3xl">
-                <p class="text-2xl md:text-3xl">Every Thursday</p>
-                <p class="text-6xl font-black text-pink-500 mt-3">7:30 PM</p>
-                <p class="text-lg mt-6">Esker ETNS • Lucan</p>
-            </div>
-        </div>
-    </section>
+<!-- SCHEDULE & PRICING -->
+<section id="schedule" style="padding: 80px 20px; background: #0a0a0a;">
+  <h2 style="margin-bottom: 60px; text-align: center;">Class <span style="color: #ff006e;">Schedule</span></h2>
+  <div style="background: #1a1a1a; border-radius: 12px; padding: 48px 32px; text-align: center; border: 2px solid #00f5ff; margin-bottom: 80px;">
+    <p style="color: #00f5ff; font-size: 14px; font-weight: 600; text-transform: uppercase; margin-bottom: 16px;">Every Week</p>
+    <p style="font-size: clamp(28px, 6vw, 48px); font-weight: 700; margin-bottom: 8px;">Thursday</p>
+    <p style="font-size: clamp(20px, 4vw, 32px); font-weight: 600; color: #ffbe0b;">7:30 PM</p>
+    <p style="color: #aaa; margin-top: 20px; font-size: 16px;">Esker ETNS • Lucan</p>
+  </div>
 
-    <!-- PRICES -->
-    <section id="prices" class="py-16 bg-zinc-950">
-        <div class="max-w-4xl mx-auto px-5 text-center">
-            <h2 class="text-4xl font-bold mb-6">Choose Your Option</h2>
-            <p class="text-pink-400 mb-10">Pay easily with Revolut</p>
+  <h3 style="font-size: 32px; font-weight: 700; margin-bottom: 40px; text-align: center;"><span style="color: #00f5ff;">Pricing</span></h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+    <div style="background: #1a1a1a; border-radius: 12px; padding: 40px 24px; text-align: center; border: 2px solid #ff006e;">
+      <p style="font-size: 14px; color: #ff006e; font-weight: 600; text-transform: uppercase; margin-bottom: 16px;">One-Time</p>
+      <p style="font-size: 48px; font-weight: 700; margin-bottom: 8px;">€12</p>
+      <p style="color: #aaa; font-size: 14px; margin-bottom: 32px;">Single Class</p>
+      <a href="https://revolut.me/licelppof" style="display: inline-block; padding: 14px 32px; background: #ff006e; color: white; font-weight: 600; border-radius: 8px; font-size: 16px; width: 100%;">Pay €12</a>
+    </div>
+    <div style="background: linear-gradient(135deg, #1a1a1a 0%, #2d0840 100%); border-radius: 12px; padding: 40px 24px; text-align: center; border: 2px solid #ffbe0b; position: relative; transform: scale(1.05);">
+      <div style="position: absolute; top: -16px; left: 50%; transform: translateX(-50%); background: #ffbe0b; color: #0a0a0a; padding: 6px 16px; border-radius: 20px; font-size: 12px; font-weight: 700; text-transform: uppercase;">BEST VALUE</div>
+      <p style="font-size: 14px; color: #ffbe0b; font-weight: 600; text-transform: uppercase; margin-bottom: 16px; margin-top: 10px;">Bundle</p>
+      <p style="font-size: 48px; font-weight: 700; margin-bottom: 8px;">€60</p>
+      <p style="color: #aaa; font-size: 14px; margin-bottom: 12px;">Pack of 6 Classes</p>
+      <p style="color: #ffbe0b; font-size: 12px; margin-bottom: 32px;">€10 per class</p>
+      <a href="https://revolut.me/licelppof" style="display: inline-block; padding: 14px 32px; background: #ffbe0b; color: #0a0a0a; font-weight: 600; border-radius: 8px; font-size: 16px; width: 100%;">Pay €60</a>
+    </div>
+  </div>
+</section>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-xl mx-auto">
-                <div class="bg-zinc-900 border border-pink-600 rounded-3xl p-8">
-                    <p class="text-pink-400 uppercase tracking-widest text-sm">Single Class</p>
-                    <p class="text-6xl font-black my-6">€12</p>
-                    <a href="https://revolut.me/licelppof" target="_blank" 
-                       class="block bg-pink-600 hover:bg-pink-500 py-5 rounded-2xl font-bold text-lg">Pay €12</a>
-                </div>
+<!-- CTA -->
+<section id="cta" style="padding: 80px 20px; background: linear-gradient(135deg, #1a0020 0%, #0a0a0a 100%); text-align: center;">
+  <h2 style="margin-bottom: 24px;">Ready to <span style="color: #00f5ff;">Join</span> <span style="color: #ff006e;">Baila & Burn</span>?</h2>
+  <p style="font-size: 18px; color: #ccc; margin-bottom: 40px;">Get in touch via WhatsApp or reserve directly with Revolut.</p>
+  <div style="display: flex; flex-direction: column; gap: 16px; max-width: 350px; margin: 0 auto;">
+    <a href="https://wa.me/353876071392" style="padding: 16px 32px; background: #00f5ff; color: #0a0a0a; font-weight: 600; border-radius: 8px; font-size: 16px; display: inline-block;">💬 Contact on WhatsApp</a>
+    <a href="https://revolut.me/licelppof" style="padding: 16px 32px; background: transparent; color: #ffbe0b; font-weight: 600; border-radius: 8px; font-size: 16px; border: 2px solid #ffbe0b; display: inline-block;">💳 Book a Class</a>
+  </div>
+</section>
 
-                <div class="bg-zinc-900 border-2 border-yellow-400 rounded-3xl p-8 relative">
-                    <div class="absolute -top-4 right-6 bg-yellow-400 text-black text-xs font-bold px-5 py-1 rounded-full">BEST VALUE</div>
-                    <p class="text-pink-400 uppercase tracking-widest text-sm">Pack of 6 Classes</p>
-                    <p class="text-6xl font-black my-6">€60</p>
-                    <a href="https://revolut.me/licelppof" target="_blank" 
-                       class="block bg-pink-600 hover:bg-pink-500 py-5 rounded-2xl font-bold text-lg">Pay €60</a>
-                </div>
-            </div>
-
-            <div class="mt-14">
-                <button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSetuN3lbDWrehA_WW3HBcImVHYNB4te32IDbiRUCdR7G3MBFA/viewform', '_blank')" 
-                        class="w-full md:w-auto bg-white text-black font-bold px-10 py-6 rounded-full text-xl hover:bg-pink-500 hover:text-white transition shadow-2xl">
-                    RESERVE YOUR SPOT
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="py-16 bg-black">
-        <div class="max-w-6xl mx-auto px-5 text-center">
-            <h2 class="text-4xl font-bold mb-10">Get in Touch</h2>
-            <div class="max-w-md mx-auto space-y-10">
-                <div>
-                    <p class="text-pink-400 mb-2">📍 LOCATION</p>
-                    <a href="https://maps.google.com/?q=Esker+Ln,+Glebe,+Lucan,+Co.+Dublin" target="_blank" class="text-xl hover:text-pink-400">
-                        Esker ETNS<br>Esker Ln, Glebe, Lucan, Co. Dublin
-                    </a>
-                </div>
-                <div>
-                    <p class="text-pink-400 mb-2">📱 WHATSAPP</p>
-                    <a href="https://wa.me/353876071392" class="text-3xl font-semibold hover:text-pink-400">
-                        087 607 1392
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-zinc-950 py-12 text-center text-white/60 text-sm">
-        <p>Baila & Burn • Latin Dance Fitness Lucan</p>
-        <p>Every Thursday at 7:30 PM</p>
-        <p class="mt-8">© 2026 Baila & Burn</p>
-    </footer>
+<!-- FOOTER -->
+<footer style="padding: 40px 20px; background: #000; border-top: 1px solid #222; text-align: center;">
+  <p style="color: #666; font-size: 14px; margin-bottom: 12px;"><span style="color: #ff006e;">BAILA</span> <span style="color: #00f5ff;">&</span> <span style="color: #ffbe0b;">BURN</span> • Latin Dance Fitness</p>
+  <p style="color: #444; font-size: 12px;">Esker ETNS, Lucan • Every Thursday at 7:30 PM</p>
+  <p style="color: #444; font-size: 12px; margin-top: 20px;">© 2026 Baila & Burn</p>
+</footer>
 
 </body>
 </html>
